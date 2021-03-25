@@ -24,3 +24,19 @@ dequeObject.rotate(2)
 
 print("Deque after 2 positive rotations:")
 print(dequeObject)
+
+#2nd option
+import collections
+sequence = (1, 2, 4, 8, 16, 32)
+
+# Create a deque from the tuple
+sequenceInDeque = collections.deque(sequence)
+
+# Print the contents of the deque object
+print("Deque before any rotation:")
+print(sequenceInDeque)
+
+# Rotate once - in negative direction
+sequenceInDeque.rotate(-1)
+print("Deque after 1 negative rotation:")
+print(sequenceInDeque)
